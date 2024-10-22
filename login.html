@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LOGIN page.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login to DMI-Marketplace</h1>
+
+            <!-- Email Field -->
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+
+            <!-- Password Field -->
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="bx bxs-lock"></i>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="btn">Login</button>
+            </div>
+
+            <!-- Don't have an account -->
+            <div class="register-link">
+                <p>Don't have an account? <a href="/register-page">Register here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
